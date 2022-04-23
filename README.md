@@ -15,7 +15,7 @@
 ## Description
 
 - To Create To-DO Task Application using Python, MySQL Database, and a Model-View-Controller Framework.
-#### Technologies used
+#### Technologies
 
 - HTML5
 - CSS3

@@ -1,5 +1,4 @@
 import git
-import gitpython
 from flask import render_template,redirect,request
 from flask.wrappers import Response
 

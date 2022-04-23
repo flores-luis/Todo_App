@@ -1,4 +1,4 @@
-# To-Do App
+# To Do App
 <img src="https://s3-us-east-2.amazonaws.com/static.showingtime.com/wp-content/uploads/2018/06/TaskList-795x675.jpg" alt="To Do Task Image"/>
 > Image is from google search
 > A Task Manager and Reminder Application

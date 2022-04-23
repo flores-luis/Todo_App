@@ -12,7 +12,7 @@ from datetime import datetime
 @app.route('/update_server', methods=['POST'])
 def webhook():
     if request.method == 'POST':
-        repo = git.Repo('./Todo_App')
+        repo = git.Repo('https://github.com/flores-luis/Todo_App')
         origin = repo.remotes.origin
         origin.pull()
         return 'Updated PythonAnywhere successfully', 200

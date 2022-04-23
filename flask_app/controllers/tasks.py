@@ -1,4 +1,4 @@
-
+import git
 from flask import render_template,redirect,request
 #do not think I will create a login page
 #import re
@@ -6,6 +6,15 @@ from flask import render_template,redirect,request
 from flask_app import app
 from flask_app.models.task import Task
 from datetime import datetime
+
+@app.route('/git_update', methods=['POST'])
+def git_update():
+  repo = git.Repo('./Todo_App')
+  origin = repo.remotes.origin
+  repo.create_head('main', 
+  origin.refs.main).set_tracking_branch(origin.refs.main).checkout()
+  origin.pull()
+  return '', 200
 
 @app.route('/')
 def home():

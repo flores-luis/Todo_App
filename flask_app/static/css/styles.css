@@ -2,23 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Square Peg';
+    font-style:bolder;
 }
 body {
-    background-image: url("/static/img/fl4.jpeg");
+    background-image: url("/static/img/chalkboard.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 #home {
     padding: 20%;
-}
-
-#dashboard {
-    margin-top:10%;
-}
-
-.btn {
-    width: 10%;
 }
 
 .taskrow {
@@ -29,9 +22,18 @@ body {
     color: black;
 }
 
-p {
-    font-size: 20px;
+.card {
+    background-color: rgb(220,220,220);
+    opacity: 70%;
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
 }
+
+p {
+    font-size: 25px;
+}
+
 
 .update {
     width: 130px;
@@ -39,22 +41,40 @@ p {
 }
 
 i {
-    color: black;
-    font-size: 1rem
+    color: white;
 }
 
+.btn{
+    margin: 5px;
+}
+
+#home > h1{
+    font-size: 100px;
+}
+
+#btn-home {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#title-container {
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+}
 
 @media only screen and (max-width: 600px) {
     body {
-        background-image: url("/static/img/w2.jpg");
+        background-image: url("/static/img/wallaperp8.5.JPG");
     }
 
     h1, p{
-        font-size: 22px;
+        font-size: 200px;
+        font-style: bolder;
     }
 
     .homefont {
-        font-size: 90px;
+        font-size: 600px;
         color: black;
         text-decoration: none;
     }
@@ -65,16 +85,16 @@ i {
     }
 
     #homeImage {
-        background-image: url("/static/img/wp.jpeg");
+        background-image: url("/static/img/wallaperp8.5.JPG");
     }
 
     .update {
-        width: 110px;
-        height: 35px;
+        width: 200px;
+        height: 50px;
     }
 
     .save {
-        height: 20px;
+        height: 50%;
         width: 25%;
     }
 }

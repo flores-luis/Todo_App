@@ -1,13 +1,13 @@
 import git
 from flask import render_template,redirect,request
-from flask.wrappers import Response
+#from flask.wrappers import Response
 
 #do not think I will create a login page
 #import re
 #from flask_bcrypt import Bcrypt
 from flask_app import app
 from flask_app.models.task import Task
-from datetime import datetime
+#from datetime import datetime
 
 @app.route('/update_server', methods=['POST'])
 def webhook():

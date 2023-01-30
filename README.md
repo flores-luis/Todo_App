@@ -20,7 +20,7 @@
 - HTML5
 - CSS3
 - Bootstrap 5
-- Font Awesome 
+- Font Awesome
 - Google Fonts/Icons
 - Python / Flask
 - Python Any Where (Cloud Server)

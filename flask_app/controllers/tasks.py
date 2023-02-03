@@ -76,4 +76,4 @@ def delete_task(id):
         "id":id
     }
     Task.delete(data)
-    return redirect('/dashboard')
+    return redirect('/dashboardPage')

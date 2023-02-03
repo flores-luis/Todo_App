@@ -22,7 +22,7 @@
         {% for each_task in task_list %}
             <div class="container taskrow d-flex justify-content-between">
                 <div class="col-lg-8 col-md-8 col-sm-8">
-                    <p>On {{ each_task.due_date }}...The task is :{{ each_task.task_name }} </p>
+                    <p>On {{ each_task.due_date }}...The task is :{{ each_task.task_name.strftime("%m/%d/%Y, %H:%M:%S") }} </p>
                 </div>
                 <div class="col-sm-3 d-flex justify-content-end abtn">
                     <a id="dashboard_btn" class="btn btn-primary" href="/view/{{each_task.id}}"><i class="bi bi-book"></i></a>

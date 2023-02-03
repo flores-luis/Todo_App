@@ -42,7 +42,7 @@ def addtask():
         "priority_level": request.form["priority_level"]
     }
     Task.save(data)
-    return redirect('/dashboard')
+    return redirect('/dashboardPage')
 
 @app.route('/update/<int:id>')
 def edit_task(id):
@@ -61,7 +61,7 @@ def update():
         "priority_level": request.form["priority_level"],
     }
     Task.update(data)
-    return redirect('/dashboard')
+    return redirect('/dashboardPage')
 
 @app.route('/view/<int:id>')
 def view_task(id):

@@ -24,7 +24,7 @@ def webhook():
 def home():
     return render_template('index.html')
 
-@app.route('/dashboard')
+@app.route('/dashboardPage')
 def dashboard():
     list = Task.get_all_tasks()
     return render_template('dashboard.html', task_list=list)

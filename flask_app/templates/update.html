@@ -11,7 +11,7 @@
 <body class="bg-dark">
     <nav class="d-flex justify-content-end align-items-center col-12 p-3">
         <div class="d-flex col-4 justify-content-evenly">
-            <a href="/dashboard" class="btn btn-secondary update">Dashboard</a>
+            <a href="/dashboardPage" class="btn btn-secondary update">Dashboard</a>
         </div>
 
     </nav>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="form-group">
                     <label for="due_date">Due Date:</label>
-                    <input type="date" name="due_date" class="form-control" value="{{edit.due_date.strftime('%Y-%m-%d')}}" >
+                    <input type="date" name="due_date" class="form-control" value="{{edit.due_date}}" >
                 </div>
                 <div class="form-group">
                     <label for="priority_level">Priority Level:</label>
